@@ -1,0 +1,23 @@
+﻿<Page x:Class="CitationMaker.SelectPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CitationMaker"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="SelectPage" Background="White">
+
+    <ScrollViewer HorizontalScrollBarVisibility="Auto" Background="White">
+        <Grid>
+            <Grid>
+                <Label Content="Citation Type" HorizontalAlignment="Left" Margin="22,34,0,0" VerticalAlignment="Top"/>
+                <RadioButton x:Name="RB_journal" GroupName="CType" Content="論文誌" HorizontalAlignment="Left" Margin="39,60,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+                <!--<RadioButton x:Name="RB_book" GroupName="CType" Content="本" HorizontalAlignment="Left" Margin="39,75,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+                <RadioButton x:Name="RB_book2" GroupName="CType" Content="本(抜粋)" HorizontalAlignment="Left" Margin="39,90,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+                <RadioButton x:Name="RB_proc" GroupName="CType" Content="会議" HorizontalAlignment="Left" Margin="39,105,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>-->
+                <Button Content="作成" HorizontalAlignment="Left" Margin="22,125,0,0" Width="75" Click="Button_Click" VerticalAlignment="Top"/>
+            </Grid>
+        </Grid>
+    </ScrollViewer>
+</Page>
