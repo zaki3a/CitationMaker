@@ -30,25 +30,10 @@ namespace CitationMaker
             InitializeComponent();
             RB_Jpn.IsChecked = true;    /*日本語(ラジオボタン)の選択*/
             ManthC.SelectedIndex = 0;   /*月(コンボボックス)の選択*/
-
-            AutherL.Content = "著者";
-            AutherT.Text = "";
-            TitleL.Content = "タイトル";
-            TitleT.Text = "";
-            BookL.Content = "掲載";
-            BookT.Text = "";
-            VolL.Content = "巻";
-            VolT.Text = "";
-            NoL.Content = "号";
-            NoT.Text = "";
-            PageSL.Content = "ページ";
-            PageST.Text = "";
-            PageET.Text = "";
-            ManthL.Content = "月";
-            YearL.Content = "年";
-            YearT.Text = "";
-            CitationT.Text = "";
             CitationT.IsReadOnly = true;
+            tmp.Text = "著者名，“標題，”雑誌名，巻，号，pp.を付けて始め-終りのページ，月年．";
+            tmpJpn.Text = "山上一郎，山下二郎，“パラメトリック増幅器，”信学論 (B), vol.J62-B, no.1, pp.20-27, Jan. 1979.";
+            tmpEng.Text = "W. Rice, A.C. Wine, and B.D. Grain, “Diffusion of impurities during epitaxy,” Proc. IEEE, vol.52, no.3, pp.284-290, March 1964.";
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -109,6 +94,17 @@ namespace CitationMaker
         private void RadioButton_Checked_2(object sender, RoutedEventArgs e)
         {
             Lang = (RadioButton)sender;
+            switch(Lang.Name)
+            {
+                case "RB_Jpn":
+                    tmpEng.Background = Brushes.White;
+                    tmpJpn.Background = Brushes.Gold;
+                    break;
+                case "RB_Eng":
+                    tmpJpn.Background = Brushes.White;
+                    tmpEng.Background = Brushes.Gold;
+                    break;
+            }
         }
     }
 }

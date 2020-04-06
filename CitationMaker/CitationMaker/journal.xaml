@@ -16,21 +16,21 @@
                 <RadioButton x:Name="RB_Eng" GroupName="Lang" Content="English" HorizontalAlignment="Left" VerticalAlignment="Top" Checked="RadioButton_Checked_2" Margin="10,0,0,0"/>
             </StackPanel>
             <Grid>
-                <Label x:Name="AutherL" Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-                <TextBox x:Name="AutherT" HorizontalAlignment="Left" Height="23" Margin="53,14,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="292"/>
-                <Label x:Name="TitleL" Content="Label" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top"/>
-                <TextBox x:Name="TitleT" HorizontalAlignment="Left" Height="23" Margin="53,42,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="292"/>
-                <Label x:Name="BookL" Content="Label" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top"/>
-                <TextBox x:Name="BookT" HorizontalAlignment="Left" Height="23" Margin="53,70,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="292"/>
-                <Label x:Name="VolL" Content="Label" HorizontalAlignment="Left" Margin="10,97,0,0" VerticalAlignment="Top"/>
-                <TextBox x:Name="VolT" HorizontalAlignment="Left" Height="23" Margin="53,101,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="292"/>
-                <Label x:Name="NoL" Content="Label" HorizontalAlignment="Left" Margin="10,125,0,0" VerticalAlignment="Top"/>
-                <TextBox x:Name="NoT" HorizontalAlignment="Left" Height="23" Margin="53,129,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="292"/>
-                <Label x:Name="PageSL" Content="Label" HorizontalAlignment="Left" Margin="10,153,0,0" VerticalAlignment="Top"/>
-                <TextBox x:Name="PageST" HorizontalAlignment="Left" Height="23" Margin="53,157,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="57"/>
+                <Label x:Name="AutherL" Content="著者名" HorizontalAlignment="Left" Margin="10,14,0,0" VerticalAlignment="Top" Width="43" Height="23" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontSize="13"/>
+                <TextBox x:Name="AutherT" HorizontalAlignment="Left" Height="23" Margin="53,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292"/>
+                <Label x:Name="TitleL" Content="標題" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" Width="43" Height="23" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontSize="13"/>
+                <TextBox x:Name="TitleT" HorizontalAlignment="Left" Height="23" Margin="53,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292"/>
+                <Label x:Name="BookL" Content="雑誌名" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Width="43" Height="23" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontSize="13"/>
+                <TextBox x:Name="BookT" HorizontalAlignment="Left" Height="23" Margin="53,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292"/>
+                <Label x:Name="VolL" Content="巻" HorizontalAlignment="Left" Margin="10,101,0,0" VerticalAlignment="Top" Width="43" Height="23" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontSize="13"/>
+                <TextBox x:Name="VolT" HorizontalAlignment="Left" Height="23" Margin="53,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292"/>
+                <Label x:Name="NoL" Content="号" HorizontalAlignment="Left" Margin="10,129,0,0" VerticalAlignment="Top" Width="43" Height="23" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontSize="13"/>
+                <TextBox x:Name="NoT" HorizontalAlignment="Left" Height="23" Margin="53,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292"/>
+                <Label x:Name="PageSL" Content="ページ" HorizontalAlignment="Left" Margin="10,157,0,0" VerticalAlignment="Top" Width="43" Height="22" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontSize="13"/>
+                <TextBox x:Name="PageST" HorizontalAlignment="Left" Height="23" Margin="53,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="57"/>
                 <Label Content="-" HorizontalAlignment="Left" Margin="115,153,0,0" VerticalAlignment="Top"/>
-                <TextBox x:Name="PageET" HorizontalAlignment="Left" Height="23" Margin="135,157,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="57"/>
-                <Label x:Name="ManthL" Content="Label" HorizontalAlignment="Left" Margin="10,181,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="PageET" HorizontalAlignment="Left" Height="23" Margin="135,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="57"/>
+                <Label x:Name="ManthL" Content="月" HorizontalAlignment="Left" Margin="10,186,0,0" VerticalAlignment="Top" Width="43" Height="21" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontSize="13"/>
                 <ComboBox x:Name="ManthC" HorizontalAlignment="Left" Margin="53,186,0,0" VerticalAlignment="Top" Width="120">
                     <ComboBoxItem Content="1"/>
                     <ComboBoxItem Content="2"/>
@@ -45,10 +45,13 @@
                     <ComboBoxItem Content="11"/>
                     <ComboBoxItem Content="12"/>
                 </ComboBox>
-                <Label x:Name="YearL" Content="Label" HorizontalAlignment="Left" Margin="10,209,0,0" VerticalAlignment="Top"/>
-                <TextBox x:Name="YearT" HorizontalAlignment="Left" Height="23" Margin="53,213,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="292"/>
+                <Label x:Name="YearL" Content="年" HorizontalAlignment="Left" Margin="10,213,0,0" VerticalAlignment="Top" Width="43" Height="22" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontSize="13"/>
+                <TextBox x:Name="YearT" HorizontalAlignment="Left" Height="23" Margin="53,213,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292"/>
                 <Button Content="作成" HorizontalAlignment="Left" Margin="20,241,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-                <TextBox x:Name="CitationT" HorizontalAlignment="Left" Height="90" Margin="20,266,0,10" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="562"/>
+                <TextBox x:Name="CitationT" HorizontalAlignment="Left" Height="90" Margin="20,266,0,10" TextWrapping="Wrap"  VerticalAlignment="Top" Width="562"/>
+                <TextBox x:Name="tmp"  HorizontalAlignment="Left" Height="51" Margin="385,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" IsReadOnly="True"/>
+                <TextBox x:Name="tmpJpn" HorizontalAlignment="Left" Height="51" Margin="385,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" IsReadOnly="True"/>
+                <TextBox x:Name="tmpEng" HorizontalAlignment="Left" Height="51" Margin="385,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" IsReadOnly="True"/>
             </Grid>
         </StackPanel>
     </ScrollViewer>
