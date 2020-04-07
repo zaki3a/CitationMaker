@@ -36,6 +36,9 @@ namespace CitationMaker
                 case "RB_journal":
                     page = new Journal();
                     break;
+                case "RB_book":
+                    page = new Book();
+                    break;
             }
             this.NavigationService.Navigate(page);
         }

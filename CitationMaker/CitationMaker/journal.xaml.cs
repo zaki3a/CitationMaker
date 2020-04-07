@@ -1,17 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace CitationMaker
 {
@@ -24,6 +13,7 @@ namespace CitationMaker
         string citation;
         string Manth;
         RadioButton Lang;
+        private static Page page = null;
 
         public Journal()
         {
@@ -105,6 +95,12 @@ namespace CitationMaker
                     tmpEng.Background = Brushes.Gold;
                     break;
             }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            page = new SelectPage();
+            this.NavigationService.Navigate(page);
         }
     }
 }
