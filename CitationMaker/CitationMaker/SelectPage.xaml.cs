@@ -30,6 +30,9 @@ namespace CitationMaker
                 case "RB_book2":
                     page = new Book2();
                     break;
+                case "RB_conf_proc":
+                    page = new Conf_Proc();
+                    break;
             }
             this.NavigationService.Navigate(page);
         }

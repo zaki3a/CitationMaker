@@ -72,10 +72,12 @@ namespace CitationMaker
             switch(Lang.Name)
             {
                 case "RB_Jpn":
-                    citation = AutherT.Text + "，“" + TitleT.Text + "，”" + BookT.Text + "，vol." + VolT.Text + "，no." + NoT.Text + "，pp." + PageST.Text + "-" + PageET.Text + "，" + Manth + ". " + YearT.Text + ".";
+                    citation = AutherT.Text + "，“" + TitleT.Text + "，”" + BookT.Text + "，vol." + VolT.Text + "，no." 
+                        + NoT.Text + "，pp." + PageST.Text + "-" + PageET.Text + "，" + Manth + ". " + YearT.Text + ".";
                     break;
                 case "RB_Eng":
-                    citation = AutherT.Text + ", \"" + TitleT.Text + ",\" " + BookT.Text + ", vol." + VolT.Text + ", no." + NoT.Text + ", pp." + PageST.Text + "-" + PageET.Text + ", " + Manth + ". " + YearT.Text + ".";
+                    citation = AutherT.Text + ", \"" + TitleT.Text + ",\" " + BookT.Text + ", vol." + VolT.Text + ", no." 
+                        + NoT.Text + ", pp." + PageST.Text + "-" + PageET.Text + ", " + Manth + ". " + YearT.Text + ".";
                     break;
             }
             CitationT.Text = citation;
