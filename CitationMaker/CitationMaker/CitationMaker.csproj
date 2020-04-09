@@ -58,6 +58,10 @@
     <Compile Include="Book.xaml.cs">
       <DependentUpon>Book.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Book2.xaml.cs">
+      <DependentUpon>Book2.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Journal.xaml.cs">
       <DependentUpon>Journal.xaml</DependentUpon>
     </Compile>
@@ -67,6 +71,10 @@
     <Page Include="Book.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Book2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
     <Page Include="Journal.xaml">
       <SubType>Designer</SubType>

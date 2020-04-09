@@ -14,9 +14,9 @@
                 <Label Content="Citation Type" HorizontalAlignment="Left" Margin="22,34,0,0" VerticalAlignment="Top"/>
                 <RadioButton x:Name="RB_journal" GroupName="CType" Content="論文誌" HorizontalAlignment="Left" Margin="39,60,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
                 <RadioButton x:Name="RB_book" GroupName="CType" Content="本" HorizontalAlignment="Left" Margin="39,75,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
-                <!--<RadioButton x:Name="RB_book2" GroupName="CType" Content="本(抜粋)" HorizontalAlignment="Left" Margin="39,90,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
-                <RadioButton x:Name="RB_proc" GroupName="CType" Content="会議" HorizontalAlignment="Left" Margin="39,105,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>-->
-                <Button Content="作成" HorizontalAlignment="Left" Margin="22,125,0,0" Width="75" Click="Button_Click" VerticalAlignment="Top"/>
+                <RadioButton x:Name="RB_book2" GroupName="CType" Content="本(抜粋)" HorizontalAlignment="Left" Margin="39,90,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+                <!--<RadioButton x:Name="RB_proc" GroupName="CType" Content="会議" HorizontalAlignment="Left" Margin="39,105,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>-->
+                <Button x:Name="Make" Content="作成" HorizontalAlignment="Left" Margin="20,125,0,0" Width="75" Click="Button_Click_Make" VerticalAlignment="Top"/>
             </Grid>
         </Grid>
     </ScrollViewer>

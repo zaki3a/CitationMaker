@@ -11,7 +11,7 @@
     <ScrollViewer HorizontalScrollBarVisibility="Auto" Background="White">
         <StackPanel>
             <StackPanel>
-                <Button Content="戻る" Width="75" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click_1"/>
+                <Button x:Name="Back" Content="戻る" Width="75" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click_Back"/>
                 <Label Content="Language" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                 <RadioButton x:Name="RB_Jpn"  GroupName="Lang" Content="日本語" VerticalAlignment="Top" Checked="RadioButton_Checked_2" HorizontalAlignment="Left" Margin="10,0,0,0"/>
                 <RadioButton x:Name="RB_Eng" GroupName="Lang" Content="English" HorizontalAlignment="Left" VerticalAlignment="Top" Checked="RadioButton_Checked_2" Margin="10,0,0,0"/>
@@ -25,8 +25,8 @@
                 <TextBox x:Name="EditorT" HorizontalAlignment="Left" Height="23" Margin="53,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292"/>
                 <Label x:Name="PublishL" Content="発行所" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top" Width="43" Height="23" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontSize="13"/>
                 <TextBox x:Name="PublishT" HorizontalAlignment="Left" Height="23" Margin="53,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292"/>
-                <Label x:Name="CityL" Content="発行&#xD;&#xA;都市名" HorizontalAlignment="Left" Margin="10,126,0,0" VerticalAlignment="Top" Width="43" Height="46" VerticalContentAlignment="Center" Padding="0" FontSize="13" HorizontalContentAlignment="Center"/>
-                <TextBox x:Name="CityT" HorizontalAlignment="Left" Height="24" Margin="53,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292"/>
+                <Label x:Name="CityL" Content="発行&#xD;&#xA;都市名" HorizontalAlignment="Left" Margin="10,126,0,0" VerticalAlignment="Top" Width="43" Height="37" VerticalContentAlignment="Center" Padding="0" FontSize="13" HorizontalContentAlignment="Center"/>
+                <TextBox x:Name="CityT" HorizontalAlignment="Left" Height="37" Margin="53,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292"/>
                 <!--<Label x:Name="PageSL" Content="ページ" HorizontalAlignment="Left" Margin="10,154,0,0" VerticalAlignment="Top" Width="43" Height="23" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontSize="13"/>
                 <TextBox x:Name="PageST" HorizontalAlignment="Left" Height="23" Margin="53,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="57"/>
                 <Label Content="-" HorizontalAlignment="Left" Margin="115,154,0,0" VerticalAlignment="Top" Height="23" Width="15" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
@@ -46,10 +46,10 @@
                     <ComboBoxItem Content="11"/>
                     <ComboBoxItem Content="12"/>
                 </ComboBox>-->
-                <Label x:Name="YearL" Content="発行年" HorizontalAlignment="Left" Margin="10,177,0,0" VerticalAlignment="Top" Width="43" Height="23" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontSize="13"/>
-                <TextBox x:Name="YearT" HorizontalAlignment="Left" Height="23" Margin="53,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292"/>
-                <Button Content="作成" HorizontalAlignment="Left" Margin="20,241,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-                <TextBox x:Name="CitationT" HorizontalAlignment="Left" Height="90" Margin="20,266,0,10" TextWrapping="Wrap"  VerticalAlignment="Top" Width="562"/>
+                <Label x:Name="YearL" Content="発行年" HorizontalAlignment="Left" Margin="10,168,0,0" VerticalAlignment="Top" Width="43" Height="23" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontSize="13"/>
+                <TextBox x:Name="YearT" HorizontalAlignment="Left" Height="23" Margin="53,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292"/>
+                <Button x:Name="Make" Content="作成" HorizontalAlignment="Left" Margin="20,241,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Make"/>
+                <TextBox x:Name="CitationT" HorizontalAlignment="Left" Height="90" Margin="20,266,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="562"/>
                 <TextBox x:Name="tmp"  HorizontalAlignment="Left" Height="51" Margin="385,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" IsReadOnly="True"/>
                 <TextBox x:Name="tmpJpn" HorizontalAlignment="Left" Height="51" Margin="385,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" IsReadOnly="True"/>
                 <TextBox x:Name="tmpEng" HorizontalAlignment="Left" Height="51" Margin="385,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" IsReadOnly="True"/>

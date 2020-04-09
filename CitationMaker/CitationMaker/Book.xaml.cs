@@ -23,7 +23,7 @@ namespace CitationMaker
             tmpEng.Text = "H. Tong, Nonlinear Time Series: A Dynamical System Approach, J.B. Elsner, ed., Oxford University Press, Oxford, 1990.";
         }
 
-        private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
+        private void Button_Click_Make(object sender, System.Windows.RoutedEventArgs e)
         {
             switch (Lang.Name)
             {
@@ -53,7 +53,7 @@ namespace CitationMaker
             }
         }
 
-        private void Button_Click_1(object sender, System.Windows.RoutedEventArgs e)
+        private void Button_Click_Back(object sender, System.Windows.RoutedEventArgs e)
         {
             page = new SelectPage();
             this.NavigationService.Navigate(page);

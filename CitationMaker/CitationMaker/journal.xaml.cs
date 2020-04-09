@@ -26,7 +26,7 @@ namespace CitationMaker
             tmpEng.Text = "W. Rice, A.C. Wine, and B.D. Grain, “Diffusion of impurities during epitaxy,” Proc. IEEE, vol.52, no.3, pp.284-290, March 1964.";
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_Make(object sender, RoutedEventArgs e)
         {
             //月変換
             switch (ManthC.SelectionBoxItem)
@@ -97,7 +97,7 @@ namespace CitationMaker
             }
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Button_Click_Back(object sender, RoutedEventArgs e)
         {
             page = new SelectPage();
             this.NavigationService.Navigate(page);
