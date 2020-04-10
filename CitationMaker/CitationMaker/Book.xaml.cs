@@ -28,12 +28,10 @@ namespace CitationMaker
             switch (Lang.Name)
             {
                 case "RB_Jpn":
-                    citation = AutherT.Text + "，" + TitleT.Text + "，" + EditorT.Text + "（編），（社）" 
-                        + PublishT.Text + "，" + CityT.Text + "，" + YearT.Text + ".";
+                    citation = AutherT.Text + "，" + TitleT.Text + "，" + EditorT.Text + "（編），（社）" + PublishT.Text + "，" + CityT.Text + "，" + YearT.Text + "．";
                     break;
                 case "RB_Eng":
-                    citation = AutherT.Text + ", " + TitleT.Text + ", " + EditorT.Text + ", ed., " + PublishT.Text 
-                        + " Press, " + CityT.Text + ", " + YearT.Text + ".";
+                    citation = AutherT.Text + ", " + TitleT.Text + ", " + EditorT.Text + ", ed., " + PublishT.Text + " Press, " + CityT.Text + ", " + YearT.Text + ".";
                     break;
             }
             CitationT.Text = citation;

@@ -22,6 +22,7 @@ namespace CitationMaker
     {
 
         string citation;
+        string Manth;
         RadioButton Lang;
         private static Page page = null;
 
@@ -32,8 +33,7 @@ namespace CitationMaker
             CitationT.IsReadOnly = true;
             tmp.Text = "著者名，“標題，”会議名，no.を付けて論文番号，pp.を付けて始め-終りのページ，開催都市名，国名，月年．";
             tmpJpn.Text = "川上三郎，川口四郎，“紫外域半導体レーザ，”1995信学全大，分冊2, no.SB2-1, pp.20-21, Sept. 1995.";
-            tmpEng.Text = "H.K. Hartline, A.B. Smith, and F. Ratlliff, “Inhibitory interaction in the retina,” " +
-                "in Handbook of Sensory Physiology, ed. M.G.F. Fuortes, pp.381-390, Springer-Verlag, Berlin, 1972.";
+            tmpEng.Text = "具体例なし";
         }
 
         private void Button_Click_Back(object sender, RoutedEventArgs e)
@@ -44,9 +44,55 @@ namespace CitationMaker
 
         private void Button_Click_Make(object sender, RoutedEventArgs e)
         {
+            //月変換
+            switch (ManthC.SelectionBoxItem)
+            {
+                case "1":
+                    Manth = "Jan";
+                    break;
+                case "2":
+                    Manth = "Feb";
+                    break;
+                case "3":
+                    Manth = "Mar";
+                    break;
+                case "4":
+                    Manth = "Apr";
+                    break;
+                case "5":
+                    Manth = "May";
+                    break;
+                case "6":
+                    Manth = "June";
+                    break;
+                case "7":
+                    Manth = "July";
+                    break;
+                case "8":
+                    Manth = "Aug";
+                    break;
+                case "9":
+                    Manth = "Sept";
+                    break;
+                case "10":
+                    Manth = "Oct";
+                    break;
+                case "11":
+                    Manth = "Nov";
+                    break;
+                case "12":
+                    Manth = "Dec";
+                    break;
+            }
+
             switch (Lang.Name)
             {
-                
+                case "RB_Jpn":
+                    citation = AutherT.Text + "，“" + TitleT.Text + "，”" + ConfT.Text + "，no." + NoT.Text + "，pp." + PageST.Text + "-" + PageST.Text + "，" + Manth + ". " + YearT.Text + "．";
+                    break;
+                case "RB_Eng":
+                    citation = AutherT.Text + ", \"" + TitleT.Text + ",\" " + ConfT.Text + ", no." + NoT.Text + ", pp." + PageST.Text + "-" + PageST.Text + ", " + Manth + ". " + YearT.Text + ".";
+                    break;
             }
             CitationT.Text = citation;
         }
