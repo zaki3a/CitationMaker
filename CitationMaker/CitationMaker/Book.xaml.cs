@@ -18,8 +18,8 @@ namespace CitationMaker
             InitializeComponent();
             RB_Jpn.IsChecked = true;    /*日本語(ラジオボタン)の選択*/
             CitationT.IsReadOnly = true;
-            tmp.Text = "著者名，書名，編者名，発行所，発行都市名，発行年";
-            tmpJpn.Text = "山田太郎，移動通信，木村次郎（編），（社）電子情報通信学会，東京，1989.";
+            tmp.Text = "著者名，書名，編者名，発行所，発行都市名，発行年．";
+            tmpJpn.Text = "山田太郎，移動通信，木村次郎（編），（社）電子情報通信学会，東京，1989．";
             tmpEng.Text = "H. Tong, Nonlinear Time Series: A Dynamical System Approach, J.B. Elsner, ed., Oxford University Press, Oxford, 1990.";
         }
 

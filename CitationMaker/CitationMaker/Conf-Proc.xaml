@@ -32,6 +32,10 @@
                 <Label Content="-" HorizontalAlignment="Left" Margin="115,140,0,0" VerticalAlignment="Top" Height="23" Width="15" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
                 <TextBox x:Name="PageET" HorizontalAlignment="Left" Height="23" Margin="135,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="57"/>
                 <Label x:Name="ManthL" Content="月" HorizontalAlignment="Left" Margin="10,238,0,0" VerticalAlignment="Top" Width="43" Height="23" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontSize="13"/>
+                <Label x:Name="CityL" Content="開催&#xD;&#xA;都市名" HorizontalAlignment="Left" Margin="10,168,0,0" VerticalAlignment="Top" Width="43" Height="37" Padding="0" VerticalContentAlignment="Center" FontSize="13" HorizontalContentAlignment="Center"/>
+                <TextBox x:Name="CityT" HorizontalAlignment="Left" Height="37" Margin="53,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292"/>
+                <Label x:Name="CountryL" Content="国名" HorizontalAlignment="Left" Margin="10,210,0,0" VerticalAlignment="Top" Width="43" Height="23" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="13"/>
+                <TextBox x:Name="CountryT" HorizontalAlignment="Left" Height="23" Margin="53,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292"/>
                 <ComboBox x:Name="ManthC" HorizontalAlignment="Left" Margin="53,238,0,0" VerticalAlignment="Top" Width="120" Height="23">
                     <ComboBoxItem Content="1"/>
                     <ComboBoxItem Content="2"/>
@@ -46,10 +50,6 @@
                     <ComboBoxItem Content="11"/>
                     <ComboBoxItem Content="12"/>
                 </ComboBox>
-                <Label Content="開催&#xD;&#xA;都市名" HorizontalAlignment="Left" Margin="10,168,0,0" VerticalAlignment="Top" Width="43" Height="37" Padding="0" VerticalContentAlignment="Center" FontSize="13" HorizontalContentAlignment="Center"/>
-                <TextBox HorizontalAlignment="Left" Height="37" Margin="53,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292"/>
-                <Label Content="国名" HorizontalAlignment="Left" Margin="10,210,0,0" VerticalAlignment="Top" Width="43" Height="23" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="13"/>
-                <TextBox HorizontalAlignment="Left" Height="23" Margin="53,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292"/>
                 <Label x:Name="YearL" Content="年" HorizontalAlignment="Left" Margin="10,266,0,0" VerticalAlignment="Top" Width="43" Height="23" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" FontSize="13"/>
                 <TextBox x:Name="YearT" HorizontalAlignment="Left" Height="23" Margin="53,266,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292"/>
                 <Button x:Name="Make" Content="作成" HorizontalAlignment="Left" Margin="20,294,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Make"/>

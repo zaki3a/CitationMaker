@@ -21,9 +21,9 @@ namespace CitationMaker
             RB_Jpn.IsChecked = true;    /*日本語(ラジオボタン)の選択*/
             ManthC.SelectedIndex = 0;   /*月(コンボボックス)の選択*/
             CitationT.IsReadOnly = true;
-            tmp.Text = "著者名，“標題，”雑誌名，巻，号，pp.を付けて始め-終りのページ，月年．";
-            tmpJpn.Text = "山上一郎，山下二郎，“パラメトリック増幅器，”信学論 (B), vol.J62-B, no.1, pp.20-27, Jan. 1979.";
-            tmpEng.Text = "W. Rice, A.C. Wine, and B.D. Grain, “Diffusion of impurities during epitaxy,” Proc. IEEE, vol.52, no.3, pp.284-290, March 1964.";
+            tmp.Text = "著者名，“標題，”雑誌名，巻，号，pp.を付けて始め-終りのページ，月. 年．";
+            tmpJpn.Text = "山上一郎，山下二郎，“パラメトリック増幅器，”信学論 (B)，vol.J62-B，no.1，pp.20-27，Jan. 1979．";
+            tmpEng.Text = "W. Rice, A.C. Wine, and B.D. Grain, \"Diffusion of impurities during epitaxy,\" Proc. IEEE, vol.52, no.3, pp.284-290, Mar. 1964.";
         }
 
         private void Button_Click_Make(object sender, RoutedEventArgs e)
@@ -72,7 +72,7 @@ namespace CitationMaker
             switch(Lang.Name)
             {
                 case "RB_Jpn":
-                    citation = AutherT.Text + "，“" + TitleT.Text + "，”" + BookT.Text + "，vol." + VolT.Text + "，no." + NoT.Text + "，pp." + PageST.Text + "-" + PageET.Text + "，" + Manth + ". " + YearT.Text + ".";
+                    citation = AutherT.Text + "，“" + TitleT.Text + "，”" + BookT.Text + "，vol." + VolT.Text + "，no." + NoT.Text + "，pp." + PageST.Text + "-" + PageET.Text + "，" + Manth + ". " + YearT.Text + "．";
                     break;
                 case "RB_Eng":
                     citation = AutherT.Text + ", \"" + TitleT.Text + ",\" " + BookT.Text + ", vol." + VolT.Text + ", no." + NoT.Text + ", pp." + PageST.Text + "-" + PageET.Text + ", " + Manth + ". " + YearT.Text + ".";

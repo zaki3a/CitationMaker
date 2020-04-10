@@ -31,8 +31,8 @@ namespace CitationMaker
             InitializeComponent();
             RB_Jpn.IsChecked = true;    /*日本語(ラジオボタン)の選択*/
             CitationT.IsReadOnly = true;
-            tmp.Text = "著者名，“標題，”会議名，no.を付けて論文番号，pp.を付けて始め-終りのページ，開催都市名，国名，月年．";
-            tmpJpn.Text = "川上三郎，川口四郎，“紫外域半導体レーザ，”1995信学全大，分冊2, no.SB2-1, pp.20-21, Sept. 1995.";
+            tmp.Text = "著者名，“標題，”会議名，no.を付けて論文番号，pp.を付けて始め-終りのページ，開催都市名，国名，月. 年．";
+            tmpJpn.Text = "川上三郎，川口四郎，“紫外域半導体レーザ，”1995信学全大，分冊2，no.SB2-1，pp.20-21，Sept. 1995．";
             tmpEng.Text = "具体例なし";
         }
 
@@ -88,10 +88,10 @@ namespace CitationMaker
             switch (Lang.Name)
             {
                 case "RB_Jpn":
-                    citation = AutherT.Text + "，“" + TitleT.Text + "，”" + ConfT.Text + "，no." + NoT.Text + "，pp." + PageST.Text + "-" + PageST.Text + "，" + Manth + ". " + YearT.Text + "．";
+                    citation = AutherT.Text + "，“" + TitleT.Text + "，”" + ConfT.Text + "，no." + NoT.Text + "，pp." + PageST.Text + "-" + PageET.Text + "，" + CityT.Text + "，" + CountryT.Text + "，" + Manth + ". " + YearT.Text + "．";
                     break;
                 case "RB_Eng":
-                    citation = AutherT.Text + ", \"" + TitleT.Text + ",\" " + ConfT.Text + ", no." + NoT.Text + ", pp." + PageST.Text + "-" + PageST.Text + ", " + Manth + ". " + YearT.Text + ".";
+                    citation = AutherT.Text + ", \"" + TitleT.Text + ",\" " + ConfT.Text + ", no." + NoT.Text + ", pp." + PageST.Text + "-" + PageET.Text + ", " + CityT.Text + ", " + CountryT.Text + ", " + Manth + ". " + YearT.Text + ".";
                     break;
             }
             CitationT.Text = citation;

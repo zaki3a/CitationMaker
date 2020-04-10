@@ -20,8 +20,8 @@ namespace CitationMaker
             RB_Jpn.IsChecked = true;    /*日本語(ラジオボタン)の選択*/
             CitationT.IsReadOnly = true;
             tmp.Text = "著者名，“標題，”書名，編者名，章番号またはpp.を付けて始め-終りのページ，発行所，発行都市名，発行年．";
-            tmpJpn.Text = "山田太郎，“周波数の有効利用，”移動通信，木村次郎（編），pp.21-41，（社）電子情報通信学会，東京，1989.";
-            tmpEng.Text = "H.K. Hartline, A.B. Smith, and F. Ratlliff, “Inhibitory interaction in the retina,” in Handbook of Sensory Physiology, ed. M.G.F. Fuortes, pp.381-390, Springer-Verlag, Berlin, 1972.";
+            tmpJpn.Text = "山田太郎，“周波数の有効利用，”移動通信，木村次郎（編），pp.21-41，（社）電子情報通信学会，東京，1989．";
+            tmpEng.Text = "H.K. Hartline, A.B. Smith, and F. Ratlliff, \"Inhibitory interaction in the retina,\" in Handbook of Sensory Physiology, ed. M.G.F. Fuortes, pp.381-390, Springer-Verlag, Berlin, 1972.";
         }
 
         private void Button_Click_Make(object sender, RoutedEventArgs e)
